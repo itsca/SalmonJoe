@@ -6,8 +6,8 @@
  */
 
 //  Game canvas dimensions.
-export const width = 640;
-export const height = 480;
+export const width = 480;
+export const height = 640;
 
 //  Adjust canvas zoom factor.
 export const zoom = 1;

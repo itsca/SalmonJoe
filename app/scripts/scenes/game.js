@@ -14,6 +14,9 @@ export default class Game extends Phaser.Scene {
 
   create() {
     //  TODO: Replace this content with really cool game code here :)
+    const x = this.cameras.main.width / 2;
+    const y = this.cameras.main.height / 2;
+    this.background1 = this.add.image(x, y, 'back');
     this.logo = this.add.existing(new Logo(this));
   }
 

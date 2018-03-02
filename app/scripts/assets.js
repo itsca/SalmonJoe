@@ -16,7 +16,14 @@ export const splashScreenAssets = [{
 }];
 
 //  -- General assets used throughout the game.
-export const gameAssets = [{
-  key: 'phaser',
-  type: 'image'
-}];
+export const gameAssets = [
+  {
+    key: 'phaser',
+    type: 'image'
+  },
+  {
+    key: 'back',
+    type: 'image',
+    url: 'back.png'
+  }
+];
