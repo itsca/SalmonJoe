@@ -8,4 +8,5 @@
 
 export {default as Loader} from './loader';
 export {default as SplashScreen} from './splash-screen';
+export {default as Menu} from './menu';
 export {default as Game} from './game';

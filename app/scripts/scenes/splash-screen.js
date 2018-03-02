@@ -50,7 +50,7 @@ export default class SplashScreen extends Phaser.Scene {
     scene.load.on('complete', () => {
       this.scene
         .stop('Loader')
-        .start('Game');
+        .start('Menu')
     });
   }
 }
