@@ -15,10 +15,10 @@ export default class Menu extends Phaser.Scene {
   create() {
     //  TODO: Replace this content with really cool game code here :)
     console.log(this)
-    const x = this.cameras.main.width / 2;
-    const y = this.cameras.main.height / 2;
-    this.background1 = this.add.image(x, (y - 640), 'back');
-    this.background2 = this.add.image(x, y, 'back');
+    const x = 0//this.cameras.main.width / 2;
+    const y = 0//this.cameras.main.height / 2;
+    this.background1 = this.add.image(x, (y - 640), 'back').setOrigin(0, 0);
+    this.background2 = this.add.image(x, y, 'back').setOrigin(0, 0);
     var titleString = "Salmon Joe";
     var titleStyle = { font: "65px Arial", fill: "#fff", align: "center" };
     var t = this.add.text(75, this.centerY, titleString, titleStyle);
@@ -30,15 +30,17 @@ export default class Menu extends Phaser.Scene {
 
   update() {
     const x = this.cameras.main.width / 2;
-    const y = this.cameras.main.height / 2;
+    const y = 0;
     // this.logo.update();
     this.background1.y += 1
     this.background2.y += 1
-    if (this.background1.y > 640) {
+    if (this.background1.y > this.cameras.main.height) {
       this.background1.y = (y - 640)
     }
-    if (this.background2.y > 640) {
+    if (this.background2.y > this.cameras.main.height) {
       this.background2.y = (y - 640)
     }
+    console.log(this.background2.y)
+    
   }
 }
