@@ -25,5 +25,15 @@ export const gameAssets = [
     key: 'back',
     type: 'image',
     url: 'back.png'
+  },
+  {
+    key: 'treesBack',
+    type: 'image',
+    url: 'treesBack.png'
+  },
+  {
+    key: 'waterBack',
+    type: 'image',
+    url: 'waterBack.png'
   }
 ];

@@ -5,7 +5,8 @@
  * A sample Game scene, displaying the Phaser logo.
  */
 
-import Logo from '../objects/logo';
+import TreesBackground from '../objects/trees-background';
+import WaterBackground from '../objects/water-background';
 
 export default class Game extends Phaser.Scene {
   constructor(config = {}) {
@@ -13,14 +14,14 @@ export default class Game extends Phaser.Scene {
   }
 
   create() {
-    //  TODO: Replace this content with really cool game code here :)
-    const x = this.cameras.main.width / 2;
-    const y = this.cameras.main.height / 2;
-    this.background1 = this.add.image(x, y, 'back');
-    this.logo = this.add.existing(new Logo(this));
+    const x = 0//this.cameras.main.width / 2;
+    const y = 0//this.cameras.main.height / 2;
+    this.waterBack = this.add.existing(new WaterBackground(this, x, y, 480, 640));
+    this.treesBack = this.add.existing(new TreesBackground(this, x, y, 480, 640));
   }
 
   update() {
-    this.logo.update();
+    this.waterBack.scroll();
+    this.treesBack.scroll();
   }
 }
