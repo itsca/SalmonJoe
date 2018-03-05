@@ -35,5 +35,11 @@ export const gameAssets = [
     key: 'waterBack',
     type: 'image',
     url: 'waterBack.png'
+  },
+  {
+    key: 'fishSpriteTest',
+    type: 'spritesheet',
+    url: 'fishSpriteTest.png',
+    config:{ frameWidth: 50, frameHeight: 50 }
   }
 ];
