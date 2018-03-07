@@ -34,7 +34,7 @@ export const gameAssets = [
   {
     key: 'waterBack',
     type: 'image',
-    url: 'waterBack.png'
+    url: 'waterBack2.png'
   },
   {
     key: 'fishSpriteTest',

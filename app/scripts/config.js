@@ -32,6 +32,7 @@ export const type = Phaser.AUTO;
 export const canvasStyle = 'display: block; margin: 0 auto;';
 
 //  Uncomment to define a background color.
+// export const backgroundColor = '#967F5C';
 export const backgroundColor = '#61BFD6';
 
 //  Enable physics simulation and configure parameters. Available systems are:

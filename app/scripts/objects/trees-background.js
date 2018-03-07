@@ -18,6 +18,6 @@ export default class TreesBackground extends Phaser.GameObjects.TileSprite {
     scene.children.add(this);
   }
   scroll() {
-    this.tilePositionY -= 0.6;
+    this.tilePositionY -= 1.5;
   }
 }

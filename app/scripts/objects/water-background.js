@@ -15,9 +15,11 @@ export default class WaterBackground extends Phaser.GameObjects.TileSprite {
     super(scene, x, y, width, height, 'waterBack');
     this.setOrigin(0, 0);
     //  Add this game object to the owner scene.
+    console.log(this);
+    
     scene.children.add(this);
   }
-  scroll() {
-    this.tilePositionY -= 1.5;
+  scroll(speed) {
+    this.tilePositionY -= speed;
   }
 }
