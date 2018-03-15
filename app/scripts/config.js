@@ -39,7 +39,12 @@ export const backgroundColor = '#61BFD6';
 //  - `arcade`: Phaser Arcade Physics 2;
 //  - `matter`: Liam Brummitt's (@liabru) Matter.js;
 //  - `impact`: ImpactJS Physics Engine.
-// export const physics = {};
+export const physics = {
+    default: 'arcade',
+    arcade: {
+      gravity: {y: 0}
+    }
+};
 
 //  Asset loader global parameters.
 export const loader = {

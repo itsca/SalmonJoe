@@ -34,6 +34,7 @@ export default class Menu extends Phaser.Scene {
     this.waterBack2.scaleX *= -1;
     this.waterBack.scaleY = 2.5;
     this.waterBack2.scaleY = 5.5;
+    console.log(this);
   }
 
   update() {

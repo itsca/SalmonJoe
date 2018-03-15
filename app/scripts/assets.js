@@ -41,5 +41,11 @@ export const gameAssets = [
     type: 'spritesheet',
     url: 'fishSpriteTest.png',
     config:{ frameWidth: 50, frameHeight: 50 }
+  },
+  {
+    key: 'rockSpriteTest',
+    type: 'spritesheet',
+    url: 'rockSpriteTest.png',
+    config:{ frameWidth: 50, frameHeight: 50 }
   }
 ];
