@@ -15,6 +15,9 @@ export default class Menu extends Phaser.Scene {
   }
 
   create() {
+    console.log('Phaser', Phaser);
+    // console.log(this);    
+    
     const x = 0//this.cameras.main.width / 2;
     const y = 0//this.cameras.main.height / 2;
     this.waterBack = this.add.existing(new WaterBackground(this, x, y, 480, 680));
@@ -34,7 +37,6 @@ export default class Menu extends Phaser.Scene {
     this.waterBack2.scaleX *= -1;
     this.waterBack.scaleY = 2.5;
     this.waterBack2.scaleY = 5.5;
-    console.log(this);
   }
 
   update() {
